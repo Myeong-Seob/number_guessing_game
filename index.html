@@ -10,6 +10,37 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="title">
+            <h3>1~100 숫자 맞추기</h3>
+            <p>10번 안에 숫자를 맞춰보세요.<br>
+                숫자를 입력하면, 정답과 비교하여 큰지 작은지 알려드릴게요.</p>
+        </div>
+
+        <div class="input">
+            <div class="input__data">
+                <label for="userNum"></label>
+                <input class="userNum" type="number" placeholder="숫자를 입력하세요"><button class="submit">정답확인</button>
+            </div>
+            <div class="submit__list">내 정답
+            </div>
+        </div>
+
+        <div class="count">
+            진행 차수 : <span class="didNum">0 회</span>
+        </div>
+
+        <div class="compare">
+            <h3 class="bigger">더 <span class="big__span">작은 숫자</span>를 생각해보세요!</h3>
+            <h3 class="lower">더 <span class="low__span">큰 숫자</span>를 생각해보세요!</h3>
+        </div>
+
+        <div class="result">
+            <h2 class="win">WIN!!</h2>
+            <h2 class="lose">LOSE!!</h2>
+            <button class="reset">다시 하기</button>
+        </div>
+    </div>
 
 </body>
 
