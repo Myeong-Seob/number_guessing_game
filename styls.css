@@ -1,0 +1,9 @@
+.win,
+.lose {
+    display: none;
+}
+
+.win.showing,
+.lose.showing {
+    display: block;
+}

@@ -11,11 +11,22 @@ const input__number = document.querySelector(".input"),
   body = document.querySelector("body");
 reset = document.querySelector(".reset");
 
-const SHOWING_CL = "showing";
+const SHOWING = "showing";
 const SHOW = "show";
 const DOWN = "down";
 const HINT = "hint";
 const list_num = [];
+
+function gameLose() {
+  lose.classList.add(SHOWING);
+}
+
+function gameCount(prop) {
+  console.log(prop);
+  if (prop > 9) {
+    gameLose();
+  }
+}
 
 function createList(item) {
   const newSpan = document.createElement("span");
@@ -27,7 +38,8 @@ function createList(item) {
 function listPlus(prop) {
   list_num.push(prop);
   createList(prop);
-  didNum.innerText = list_num.length + "회";
+  didNum.innerText = list_num.length;
+  gameCount(didNum.innerText);
 }
 
 function makeRndNum() {
