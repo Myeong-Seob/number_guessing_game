@@ -48,6 +48,9 @@ function compareNum(made, user) {
   }
   if (made !== user) {
     hint(made, user);
+    if (user == "") {
+      lower.classList.remove(HINT);
+    }
   }
 }
 
@@ -73,10 +76,14 @@ function createList(item) {
 }
 
 function listPlus(prop) {
-  list_num.push(prop);
-  createList(prop);
-  didNum.innerText = list_num.length;
-  gameCount(didNum.innerText);
+  if (prop == "") {
+    alert("숫자를 입력하세요!!!");
+  } else {
+    list_num.push(prop);
+    createList(prop);
+    didNum.innerText = list_num.length;
+    gameCount(didNum.innerText);
+  }
 }
 
 function makeRndNum() {
