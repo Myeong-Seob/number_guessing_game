@@ -17,12 +17,23 @@ const DOWN = "down";
 const HINT = "hint";
 const list_num = [];
 
+function compareNum(made, user) {
+  if (made == user) {
+    gameWin();
+  }
+  if (made !== user) {
+  }
+}
+
+function gameWin() {
+  win.classList.add(SHOWING);
+}
+
 function gameLose() {
   lose.classList.add(SHOWING);
 }
 
 function gameCount(prop) {
-  console.log(prop);
   if (prop > 9) {
     gameLose();
   }
@@ -54,6 +65,7 @@ function init() {
   submit.addEventListener("click", () => {
     const userNumValue = userNum.value;
     listPlus(userNumValue);
+    compareNum(randomNum, userNumValue);
     userNum.value = "";
   });
 }
