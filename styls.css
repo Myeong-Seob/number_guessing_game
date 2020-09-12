@@ -5,6 +5,12 @@ body {
     margin-top: 50px;
 }
 
+.show {
+    color: white;
+    background-color: rgb(48, 59, 70);
+    transition: all 500ms ease;
+}
+
 .container {
     border: 1px solid lightslategray;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
