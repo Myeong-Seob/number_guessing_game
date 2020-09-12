@@ -21,6 +21,41 @@ body {
     font-size: 30px;
 }
 
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap column;
+}
+
+.submit__list {
+    border-bottom: 1px solid lightslategray;
+}
+
+.submit__list span {
+    margin-left: 5px;
+}
+
+.userNum {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightslategray;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.submit {
+    margin-left: 15px;
+    border: 1px lightslategray solid;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+
+
+
 .win,
 .lose {
     display: none;
