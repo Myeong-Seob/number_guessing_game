@@ -17,6 +17,12 @@ const DOWN = "down";
 const HINT = "hint";
 const list_num = [];
 
+function restartGame() {
+  window.location.reload();
+}
+
+reset.addEventListener("click", restartGame);
+
 function hint(made, user) {
   lower.classList.remove(HINT);
   bigger.classList.remove(HINT);
