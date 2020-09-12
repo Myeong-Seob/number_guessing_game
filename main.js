@@ -17,8 +17,16 @@ const DOWN = "down";
 const HINT = "hint";
 const list_num = [];
 
+function createList(item) {
+  const newSpan = document.createElement("span");
+  const items = document.createTextNode(`${item}`);
+  newSpan.appendChild(items);
+  list.appendChild(newSpan);
+}
+
 function listPlus(prop) {
   list_num.push(prop);
+  createList(prop);
   didNum.innerText = list_num.length + "회";
 }
 
