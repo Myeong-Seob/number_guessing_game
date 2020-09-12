@@ -17,6 +17,11 @@ const DOWN = "down";
 const HINT = "hint";
 const list_num = [];
 
+function changeColor() {
+  body.classList.add(SHOW);
+  reset.classList.add(DOWN);
+}
+
 function restartGame() {
   window.location.reload();
 }
@@ -56,10 +61,12 @@ function compareNum(made, user) {
 
 function gameWin() {
   win.classList.add(SHOWING);
+  changeColor();
 }
 
 function gameLose() {
   lose.classList.add(SHOWING);
+  changeColor();
 }
 
 function gameCount(prop) {
