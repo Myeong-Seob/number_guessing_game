@@ -17,6 +17,11 @@ const DOWN = "down";
 const HINT = "hint";
 const list_num = [];
 
+function listPlus(prop) {
+  list_num.push(prop);
+  didNum.innerText = list_num.length + "회";
+}
+
 function makeRndNum() {
   const randomNum = Math.floor(Math.random() * 100) + 1;
   return randomNum;
@@ -25,6 +30,12 @@ function makeRndNum() {
 function init() {
   const randomNum = makeRndNum();
   console.log(randomNum);
+
+  submit.addEventListener("click", () => {
+    const userNumValue = userNum.value;
+    listPlus(userNumValue);
+    userNum.value = "";
+  });
 }
 
 init();
