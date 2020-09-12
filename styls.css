@@ -27,6 +27,10 @@ body {
     font-size: 30px;
 }
 
+.title__span {
+    font-size: 23px;
+}
+
 .input {
     display: flex;
     align-items: center;

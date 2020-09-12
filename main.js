@@ -100,7 +100,6 @@ function makeRndNum() {
 
 function init() {
   const randomNum = makeRndNum();
-  console.log(randomNum);
 
   submit.addEventListener("click", () => {
     const userNumValue = userNum.value;
