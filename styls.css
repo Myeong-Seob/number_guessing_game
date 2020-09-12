@@ -16,6 +16,11 @@ body {
     margin: 15px;
 }
 
+.title h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
 .win,
 .lose {
     display: none;
