@@ -7,3 +7,13 @@
 .lose.showing {
     display: block;
 }
+
+.bigger,
+.lower {
+    display: none;
+}
+
+.bigger.hint,
+.lower.hint {
+    display: block;
+}

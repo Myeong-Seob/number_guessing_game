@@ -17,11 +17,31 @@ const DOWN = "down";
 const HINT = "hint";
 const list_num = [];
 
+function hint(made, user) {
+  lower.classList.remove(HINT);
+  bigger.classList.remove(HINT);
+
+  if (made > user) {
+    lower.classList.add(HINT);
+    if (list_num.length == 10) {
+      lower.classList.remove(HINT);
+    }
+  }
+  if (user > made) {
+    bigger.classList.add(HINT);
+    if (list_num.length == 10) {
+      bigger.classList.remove(HINT);
+      gameLose();
+    }
+  }
+}
+
 function compareNum(made, user) {
   if (made == user) {
     gameWin();
   }
   if (made !== user) {
+    hint(made, user);
   }
 }
 
