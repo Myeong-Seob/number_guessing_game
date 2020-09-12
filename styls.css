@@ -30,6 +30,7 @@ body {
 
 .title__span {
     font-size: 23px;
+    font-weight: bold;
 }
 
 .input {

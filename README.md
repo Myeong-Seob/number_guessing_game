@@ -1,6 +1,7 @@
 # Mini Project
 
 Number Guessing Game
+https://myeong-seob.github.io/number_guessing_game/
 
 It really helped for me
 
