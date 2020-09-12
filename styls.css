@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+    margin: 0 auto;
     border: 1px solid lightslategray;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
         0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
@@ -91,7 +92,6 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: rgb(48, 59, 70);
 }
 
 .win,
@@ -152,11 +152,49 @@ body {
     transition: all 500ms ease;
 }
 
-.bigger,
-.lower {
-    display: none;
-}
 
-.hint {
-    display: block;
+
+@media screen and (max-width:800px) {
+    .container {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .title h3 {
+        font-size: 15px;
+    }
+
+    .title p {
+        font-size: 10px;
+    }
+
+    .title__span {
+        font-size: 12px;
+    }
+
+    .bigger.hint,
+    .lower.hint {
+        font-size: 18px;
+    }
+
+    .bigger.hint .big__span {
+        font-size: 20px;
+    }
+
+    .lower.hint .low__span {
+        font-size: 20px;
+    }
+
+    .win,
+    .lose {
+        font-size: 30px;
+    }
+
+    .reset.down {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
