@@ -77,16 +77,38 @@ body {
 }
 
 
-
+.result {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(48, 59, 70);
+}
 
 .win,
 .lose {
-    display: none;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    transition: all 1000ms ease;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .win.showing,
 .lose.showing {
-    display: block;
+    transform: translate(-50%, 10px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.win {
+    color: rgb(0, 179, 255);
+}
+
+.lose {
+    color: rgb(249, 75, 0);
 }
 
 .bigger,
@@ -96,5 +118,35 @@ body {
 
 .bigger.hint,
 .lower.hint {
+    display: block;
+}
+
+.reset {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.reset.down {
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 500ms ease;
+}
+
+.bigger,
+.lower {
+    display: none;
+}
+
+.hint {
     display: block;
 }
