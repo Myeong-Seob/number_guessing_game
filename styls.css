@@ -53,6 +53,29 @@ body {
         0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
+.compare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compare h3 {
+    font-size: 23px;
+
+}
+
+.compare span {
+    font-size: 30px;
+}
+
+.big__span {
+    color: rgb(249, 75, 0)
+}
+
+.low__span {
+    color: rgb(0, 179, 255)
+}
+
 
 
 
